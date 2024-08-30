@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672f46c7d23efa841afb554b11911540, type: 3}
+  m_Name: Core3
+  m_EditorClassIdentifier: 
+  id: 3
+  name: 3
+  sprite: {fileID: 21300000, guid: ba855e508fa0fff4d847f139c7694999, type: 3}
+  description: "\uC7A5\uCC29 : \uBC94\uC704 \uB0B4 \uD0C0\uC77C\uC744 \uD574\uC81C\uD558\uACE0,
+    \uBB34\uC791\uC704 \uC801\uC5D0\uAC8C \uD574\uC81C\uD55C \uD0C0\uC77C * 3 \uB9CC\uD07C\uC758
+    \uC77C\uBC18 \uB2E8\uC77C \uD53C\uD574\uB97C \uC90D\uB2C8\uB2E4.3\uBC88 \uBC18\uBCF5\uD569\uB2C8\uB2E4."
+  damage: 3
+  heal: 0
+  armor: 0
+  count: 3
+  magicNum: 0
+  scope:
+    distance: 1
+    directions: 0400000001000000
+  tcas:
+  - trigger:
+      rid: 2449105597495508997
+    condition:
+      rid: -2
+    ability:
+      rid: 2449105597495508998
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2449105597495508997
+      type: {class: MountCoreTrigger, ns: , asm: Assembly-CSharp}
+      data:
+        canRepeat: 0
+        count: 1
+    - rid: 2449105597495508998
+      type: {class: Ability3, ns: , asm: Assembly-CSharp}
+      data: 

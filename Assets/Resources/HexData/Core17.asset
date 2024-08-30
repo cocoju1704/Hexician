@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672f46c7d23efa841afb554b11911540, type: 3}
+  m_Name: Core17
+  m_EditorClassIdentifier: 
+  id: 17
+  name: 17
+  sprite: {fileID: 21300000, guid: 0b69e415297a5ed459e14528cce901a5, type: 3}
+  description: "\uC7A5\uCC29 : 20 \uB9CC\uD07C\uC758 \uC77C\uBC18 \uB2E8\uC77C \uD53C\uD574\uB97C
+    \uC90D\uB2C8\uB2E4. \uC81C\uC678 : \uB371\uC5D0 \u2018\uC18C\uBA78\uC2DC \uAC15\uD574\uC9C0\uAE303\u2019\uB97C
+    \uCD94\uAC00\uD569\uB2C8\uB2E4."
+  damage: 20
+  heal: 0
+  armor: 0
+  count: 0
+  magicNum: 18
+  scope:
+    distance: 0
+    directions: 
+  tcas:
+  - trigger:
+      rid: 2502476398728052747
+    condition:
+      rid: -2
+    ability:
+      rid: 2502476398728052749
+  - trigger:
+      rid: 2502476398728052750
+    condition:
+      rid: -2
+    ability:
+      rid: 2502476398728052751
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2502476398728052747
+      type: {class: MountCoreTrigger, ns: , asm: Assembly-CSharp}
+      data:
+        canRepeat: 0
+        count: 1
+    - rid: 2502476398728052749
+      type: {class: Ability5, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 2502476398728052750
+      type: {class: ExcludedTrigger, ns: , asm: Assembly-CSharp}
+      data:
+        canRepeat: 0
+        count: 1
+    - rid: 2502476398728052751
+      type: {class: Ability6, ns: , asm: Assembly-CSharp}
+      data: 

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Card
+  - Board
+  - Tile
+  - Monster
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Background
+  - Water
+  - UI
+  - RoomUI
+  - 
+  - 
+  - Card
+  - Board
+  - StageTile
+  - 
+  - Monster
+  - Item
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Card
+    uniqueID: 3385748115
+    locked: 0
+  - name: Map
+    uniqueID: 1299688511
+    locked: 0
+  - name: Player
+    uniqueID: 3838054033
+    locked: 0
+  - name: Underlayed UI
+    uniqueID: 636123855
+    locked: 0
+  - name: Temporary UI
+    uniqueID: 3052224351
+    locked: 0
+  - name: Temporary UI For Scroll
+    uniqueID: 968992225
+    locked: 0
+  - name: Overlayed UI
+    uniqueID: 1011099901
+    locked: 0

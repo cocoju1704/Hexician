@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672f46c7d23efa841afb554b11911540, type: 3}
+  m_Name: Core25
+  m_EditorClassIdentifier: 
+  id: 25
+  name: 25
+  sprite: {fileID: 21300000, guid: 0b69e415297a5ed459e14528cce901a5, type: 3}
+  description: "\uC9C0\uC18D : \uC801\uC744 \uACF5\uACA9\uD560 \uB54C\uB9C8\uB2E4,
+    \uCCB4\uB825\uC744 1 \uD68C\uBCF5\uD569\uB2C8\uB2E4.  \uB9E4 \uD134 \uC885\uB8CC\uC2DC,
+    \uBC94\uC704 \uB0B4 \uD0C0\uC77C\uC744 \uC81C\uC678\uC2DC\uD0B5\uB2C8\uB2E4.
+    \uB9CC\uC57D \uC81C\uC678\uC2DC\uD0A4\uC9C0 \uBABB\uD588\uB2E4\uBA74 \uC774 \uCE74\uB4DC\uAC00
+    \uC81C\uC678\uB429\uB2C8\uB2E4."
+  damage: 0
+  heal: 1
+  armor: 0
+  count: 0
+  magicNum: 0
+  scope:
+    distance: 1
+    directions: 04000000
+  tcas:
+  - trigger:
+      rid: 2502476420198957062
+    condition:
+      rid: -2
+    ability:
+      rid: 2502476420198957063
+  - trigger:
+      rid: 2502476420198957064
+    condition:
+      rid: -2
+    ability:
+      rid: 2502476420198957065
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2502476420198957062
+      type: {class: AttackTrigger, ns: , asm: Assembly-CSharp}
+      data:
+        canRepeat: 1
+        count: 1
+        damageType: 0
+    - rid: 2502476420198957063
+      type: {class: Ability23, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 2502476420198957064
+      type: {class: EndTurnTrigger, ns: , asm: Assembly-CSharp}
+      data:
+        canRepeat: 1
+        count: 1
+    - rid: 2502476420198957065
+      type: {class: Ability24, ns: , asm: Assembly-CSharp}
+      data: 
