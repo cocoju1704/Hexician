@@ -29,7 +29,7 @@ public class Room {
     #endregion
 
     public Room() {
-        roomType = Enums.RoomType.Shop;
+        roomType = Enums.RoomType.Battle;
         monsterIds = new List<int>();
         itemIds = new List<int>();
         hexIds = new List<int>();

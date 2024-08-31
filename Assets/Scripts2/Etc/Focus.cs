@@ -10,8 +10,9 @@ public class Focus : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
     [SerializeField] bool isRightPopup;
     [SerializeField] int padding;
     [SerializeField] GameObject popup;
+    [SerializeField] Canvas canvas;
     void Awake() {
-        popup = Instantiate(popup, GameObject.Find("Canvas").transform);
+        popup = Instantiate(popup, canvas.transform);
         popup.SetActive(false);
     }
 

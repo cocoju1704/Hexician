@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class StageTile : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
     [SerializeField] Image roomIconImage;
     [SerializeField] Image borderImage;
-
+    [SerializeField] List<Sprite> roomIcons;
     float tileSize;
     Vector3Int coordinate;
     StageBoard board;
@@ -28,6 +28,7 @@ public class StageTile : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         name = coordinate.ToString();
 
         this.roomType = roomType;
+        this.roomIconImage.sprite = roomIcons[(int)roomType];
     }
 
     public void ChangeRoomType(Enums.RoomType roomType) {

@@ -53,6 +53,7 @@ public static class Enums {
         Empty,
         Elite,
         Boss,
+        Battle,
         Danger,
         Chest,
         Shop,

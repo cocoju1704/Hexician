@@ -69,7 +69,7 @@ public class Player : Unit, ISavable {
 
         playerData.activatedTiles = new Dictionary<Vector3Int, bool>(this.activatedTiles);
 
-        Debug.Log("QQQQQQQQQQ");
+        Debug.Log("Saved Player Data");
     }
 
     public void Load(GameData gameData) {

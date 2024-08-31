@@ -46,6 +46,7 @@ public class SaveSystem : Singleton<SaveSystem> {
         }
 
         string jsonFormat = JsonConvert.SerializeObject(gameData, Formatting.Indented, settings);
+        
         File.WriteAllText(saveFilePath, jsonFormat);
         return true;
     }

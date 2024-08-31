@@ -28,6 +28,7 @@ public class SceneLoadSystem : Singleton<SceneLoadSystem> {
         {Enums.RoomType.Empty, "BattleScene"},
         {Enums.RoomType.Elite, "BattleScene"},
         {Enums.RoomType.Boss, "BattleScene"},
+        {Enums.RoomType.Battle, "BattleScene2"},
         {Enums.RoomType.Danger, "BattleScene"},
         {Enums.RoomType.Chest, "ChestScene"},
         {Enums.RoomType.Shop, "ShopScene"},

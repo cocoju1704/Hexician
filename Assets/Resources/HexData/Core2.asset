@@ -14,34 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   name: 2
-  sprite: {fileID: 21300000, guid: 0d45cc6589e31a84295d03a7b786e870, type: 3}
+  sprite: {fileID: 1103520614, guid: a2b8dc4ea9203dd469cc09e0f7e1abe8, type: 3}
   description: "\uC7A5\uCC29 : \uBC94\uC704 \uB0B4 \uD0C0\uC77C\uC744 \uD574\uC81C\uD558\uACE0,
     4 \uB9CC\uD07C\uC758 \uC77C\uBC18 \uB2E8\uC77C \uD53C\uD574\uB97C \uC90D\uB2C8\uB2E4.
     \uD574\uC81C\uD55C \uD0C0\uC77C \uAC1C\uC218\uB9CC\uD07C \uBC18\uBCF5\uD569\uB2C8\uB2E4."
   damage: 4
   heal: 0
   armor: 0
-  magicNum: 0
+  magicNum1: 0
+  magicNum2: 0
+  magicNum3: 0
   scope:
     distance: 1
     directions: 040000000000000002000000
   tcas:
   - trigger:
-      rid: 2449105597495508995
+      rid: 2776115826094768135
     condition:
       rid: -2
     ability:
-      rid: 2449105597495508996
+      rid: 2776115824478912515
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2449105597495508995
-      type: {class: MountCoreTrigger, ns: , asm: Assembly-CSharp}
+    - rid: 2776115824478912515
+      type: {class: HexAbility2, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 2776115826094768135
+      type: {class: MountTrigger, ns: , asm: Assembly-CSharp}
       data:
         canRepeat: 0
-        count: 1
-    - rid: 2449105597495508996
-      type: {class: Ability2, ns: , asm: Assembly-CSharp}
-      data: 
+        count: 0
+        isLifeTrigger: 0

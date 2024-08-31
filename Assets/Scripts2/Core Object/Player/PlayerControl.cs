@@ -70,28 +70,37 @@ public class PlayerControl : MonoBehaviour {
             if(Input.GetMouseButton(0)) {
                 if(hit) {
                     BattleTile tile = hit.collider.GetComponent<BattleTile>();
-
-                    if(selectedTile == null || selectedTile != tile) {
-                        selectedTile = tile;
-                        BattleManager.instance.board.indicator.TurnOn(tile, selectedCard.hex.scope);
+                    if (tile.isEmpty) {
+                        if(selectedTile == null || selectedTile != tile) {
+                            selectedTile = tile;
+                            BattleManager.instance.board.indicator.TurnOn(tile, selectedCard.hex.scope);
+                        }
+                        selectedCard.SetPosition(tile.transform.position);
                     }
-                    selectedCard.SetPosition(tile.transform.position);
+                    else {
+                        BattleManager.instance.board.indicator.TurnOff();
+                        selectedTile = null;
+                        selectedCard.SetPosition(mousePos);
+                    }
                 }
                 else {
                     BattleManager.instance.board.indicator.TurnOff();
                     selectedTile = null;
-                    
                     selectedCard.SetPosition(mousePos);
                 }
             }
             else if(Input.GetMouseButtonUp(0)) {
                 if(hit) {
-                    state = State.PlacedTemp;
-
                     selectedTile = hit.collider.GetComponent<BattleTile>();
-                    selectedCard.PlaceTemp(selectedTile);
+                    if (selectedTile.isEmpty) {
+                        state = State.PlacedTemp;
+                        selectedCard.PlaceTemp(selectedTile);
 
-                    SetDimActive(true);
+                        SetDimActive(true);
+                    }
+                    else {
+                        CancelSelect();
+                    }
                 }
                 else {
                     CancelSelect();
@@ -154,14 +163,14 @@ public class PlayerControl : MonoBehaviour {
             
             focusedCard = card;
             focusedCard.Focus();
-            // detailsObj.GetComponent<CardDetails>().Set(card.hex);
+            detailsObj.GetComponent<HexDetailsUI>().Set(card.hex);
         }
         else if(focusedCard != null && card != focusedCard) {
             focusedCard.GoToHand(0.1f);
 
             focusedCard = card;
             focusedCard.Focus();
-            // detailsObj.GetComponent<CardDetails>().Set(card.hex);
+            detailsObj.GetComponent<HexDetailsUI>().Set(card.hex);
         }
     }
     void HideCardDetails() {

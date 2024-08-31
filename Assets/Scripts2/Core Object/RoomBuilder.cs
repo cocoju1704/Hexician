@@ -9,6 +9,9 @@ public class RoomBuilder : MonoBehaviour, ISavable {
             case Enums.RoomType.Empty :
             case Enums.RoomType.Elite :
             case Enums.RoomType.Boss :
+            case Enums.RoomType.Battle:
+                room = BuildBattleRoom(room);
+                break;
             case Enums.RoomType.Danger :
                 // room = BuildBattleRoom(room.roomType);
                 break;
@@ -34,7 +37,8 @@ public class RoomBuilder : MonoBehaviour, ISavable {
     }
 
     Room BuildBattleRoom(Room room) {
-        return null;
+        room.monsterIds = new List<int> {};
+        return room;
     }
 
     Room BuildChestRoom(Room room) {

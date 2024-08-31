@@ -24,28 +24,25 @@ public class ResourceSystem : Singleton<ResourceSystem> {
 
         string fileName = "PlayerData";
 
-        // foreach(Enums.CharacterType type in System.Enum.GetValues(typeof(Enums.CharacterType))) {
-        //     if(type == Enums.CharacterType.None) {
-        //         return;
-        //     }
+        foreach(Enums.CharacterType type in System.Enum.GetValues(typeof(Enums.CharacterType))) {
+            if(type == Enums.CharacterType.None) {
+                return;
+            }
             
-        //     string filePath = Path.Combine(Application.dataPath, fileName + type.ToString());
-        //     string jsonFormat = File.ReadAllText(filePath);
-        //     PlayerData data = JsonConvert.DeserializeObject<PlayerData>(jsonFormat);
+            string filePath = Path.Combine(Application.dataPath, fileName + type.ToString());
+            string jsonFormat = File.ReadAllText(filePath);
+            PlayerData data = JsonConvert.DeserializeObject<PlayerData>(jsonFormat);
             
-        //     playerDataDictionary.Add(type, data);
-        // }
+            playerDataDictionary.Add(type, data);
+        }
     }
 
     void LoadAllHex() {
         hexDataList = new List<SOHexData>();
-        SOHexData soHexData = Resources.Load<SOHexData>("HexData/Test"); 
-        hexDataList.Add(soHexData);
-        // hexDataList = Resources.LoadAll<SOHexData>("HexData").OrderBy((data) => data.id).ToList();
+        hexDataList = Resources.LoadAll<SOHexData>("HexData").OrderBy((data) => data.id).ToList();
     }
 
     void LoadAllItem() {
-        // 나중에 json으로 아이템 한 번에 만드는거 가능?
         allItemList.Add(null);
         for (int i = 1; i <= maxItemCount; i++) {
             GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/Items/Item " + i);

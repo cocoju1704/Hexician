@@ -21,7 +21,9 @@ MonoBehaviour:
   damage: 5
   heal: 0
   armor: 0
-  magicNum: 5
+  magicNum1: 0
+  magicNum2: 0
+  magicNum3: 0
   scope:
     distance: 0
     directions: 
@@ -50,7 +52,6 @@ MonoBehaviour:
         count: 0
     - rid: 2449105597495509002
       type: {class: Ability5, ns: , asm: Assembly-CSharp}
-      data: 
     - rid: 2449105597495509003
       type: {class: DismountedTrigger, ns: , asm: Assembly-CSharp}
       data:
@@ -58,4 +59,3 @@ MonoBehaviour:
         count: 0
     - rid: 2449105597495509004
       type: {class: Ability6, ns: , asm: Assembly-CSharp}
-      data: 

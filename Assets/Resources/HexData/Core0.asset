@@ -20,27 +20,21 @@ MonoBehaviour:
   damage: 5
   heal: 0
   armor: 0
-  magicNum: 0
+  magicNum1: 0
+  magicNum2: 0
+  magicNum3: 0
   scope:
     distance: 1
     directions: 04000000
   tcas:
   - trigger:
-      rid: 2449105580278677516
+      rid: -2
     condition:
       rid: -2
     ability:
-      rid: 2449105597495508992
+      rid: -2
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2449105580278677516
-      type: {class: MountCoreTrigger, ns: , asm: Assembly-CSharp}
-      data:
-        canRepeat: 0
-        count: 1
-    - rid: 2449105597495508992
-      type: {class: Ability0, ns: , asm: Assembly-CSharp}
-      data: 

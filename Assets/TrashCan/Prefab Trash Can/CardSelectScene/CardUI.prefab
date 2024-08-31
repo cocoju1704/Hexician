@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 553537639890507575}
   - component: {fileID: 1324132418452798575}
   - component: {fileID: 3914764570026521264}
-  - component: {fileID: 530369460740461302}
+  - component: {fileID: 1556947389742396533}
   m_Layer: 12
   m_Name: CardUI
   m_TagString: Untagged
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28475437, g: 0.57225215, b: 0.764151, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -438,7 +438,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &530369460740461302
+--- !u!114 &1556947389742396533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,16 +447,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7464262672053749207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b787675da872dd8438fd3d9c8755068d, type: 3}
+  m_Script: {fileID: 11500000, guid: c1c004f7705b14049bd5e09b83187537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 8662416069390336722}
-  cardNameText: {fileID: 4616102050629725922}
-  cardDescriptionText: {fileID: 8086285756093634765}
-  cardPrefab: {fileID: 2345999094814891484, guid: 14dc9c70baf272b42ba0ec5fc110a4c5, type: 3}
-  index: 0
-  cardSelectUILogics: {fileID: 0}
-  cardSelectUIVisuals: {fileID: 0}
+  nameTMP: {fileID: 4616102050629725922}
+  descriptionTMP: {fileID: 8086285756093634765}
+  image: {fileID: 8662416069390336722}
 --- !u!1 &9018897138584977550
 GameObject:
   m_ObjectHideFlags: 0

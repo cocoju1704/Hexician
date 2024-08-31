@@ -50,6 +50,8 @@ public class Stage : MonoBehaviour, ISavable {
             }
         }
         rooms[Utils.Vectors[(int)Enums.Direction.Left]].roomType = Enums.RoomType.Chest;
+        rooms[Utils.Vectors[(int)Enums.Direction.TopLeft]].roomType = Enums.RoomType.Shop;
+        rooms[Utils.Vectors[(int)Enums.Direction.BottomLeft]].roomType = Enums.RoomType.Battle;
     }
 
     public Room GetRoom(Vector3Int coordinate) {
